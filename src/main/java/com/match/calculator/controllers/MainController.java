@@ -19,9 +19,9 @@ public class MainController {
         return "tables";
     }
 
-    @GetMapping("/measure")
-    public String measure(Model model) {
+    @GetMapping("/measures")
+    public String measures(Model model) {
         model.addAttribute("title", "Как определить свой размер одежды");
-        return "measure";
+        return "measures";
     }
 }

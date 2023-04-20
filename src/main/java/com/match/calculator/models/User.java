@@ -10,8 +10,48 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name, email;
-    private double foot;
+    private String username, email;
+    private double height, breast, waist, hips, foot;
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getBreast() {
+        return breast;
+    }
+
+    public void setBreast(double breast) {
+        this.breast = breast;
+    }
+
+    public double getWaist() {
+        return waist;
+    }
+
+    public void setWaist(double waist) {
+        this.waist = waist;
+    }
+
+    public double getHips() {
+        return hips;
+    }
+
+    public void setHips(double hips) {
+        this.hips = hips;
+    }
+
+    public double getFoot() {
+        return foot;
+    }
+
+    public void setFoot(double foot) {
+        this.foot = foot;
+    }
 
     public Long getId() {
         return id;
@@ -21,12 +61,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
@@ -37,11 +77,6 @@ public class User {
         this.email = email;
     }
 
-    public double getFoot() {
-        return foot;
-    }
-
-    public void setFoot(double foot) {
-        this.foot = foot;
+    public User() {
     }
 }
