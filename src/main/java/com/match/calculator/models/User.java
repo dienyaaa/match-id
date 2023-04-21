@@ -103,18 +103,22 @@ public class User {
     }
 
     public double getShoeSize() {
-         TreeMap<Double, Double> sizesMan = new TreeMap<Double, Double>()
-         {{
-                 put(250.0, 39.0);
-                 put(257.0,40.0);
-                 put(263.0,41.0);
-                 put(270.0,42.0);
-                 put(277.0,43.0);
-                 put(283.0,44.0);
-                 put(290.0,45.0);
-                 put(297.0,46.0);
-                 put(303.0,47.0);
-         }};
+        return shoeSize;
+    }
+
+    public void setShoeSize() {
+        TreeMap<Double, Double> sizesMan = new TreeMap<Double, Double>()
+        {{
+            put(250.0, 39.0);
+            put(257.0,40.0);
+            put(263.0,41.0);
+            put(270.0,42.0);
+            put(277.0,43.0);
+            put(283.0,44.0);
+            put(290.0,45.0);
+            put(297.0,46.0);
+            put(303.0,47.0);
+        }};
         TreeMap<Double, Double> sizesWoman = new TreeMap<Double, Double>()
         {{
             put(223.0, 35.0);
@@ -145,6 +149,6 @@ public class User {
         } else if (low != null || high != null) {
             res = low != null ? low.getValue() : high.getValue();
         }
-        return res;
+        this.shoeSize = res;
     }
 }

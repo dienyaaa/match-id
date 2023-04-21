@@ -41,7 +41,7 @@ public class UserController {
         n.setHips(hips);
         n.setFoot(foot);
         n.setGender(Gender.valueOf(gender));
-        n.getShoeSize();
+        n.setShoeSize();
         userRepository.save(n);
         return "redirect:/user/" + n.getId();
     }
@@ -73,7 +73,7 @@ public class UserController {
         n.setHips(hips);
         n.setFoot(foot);
         n.setGender(Gender.valueOf(gender));
-        n.getShoeSize();
+        n.setShoeSize();
         userRepository.save(n);
         return "redirect:/user/" + n.getId();
     }
