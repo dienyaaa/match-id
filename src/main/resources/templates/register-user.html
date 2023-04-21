@@ -11,7 +11,7 @@
     <main>
         <div class="py-5 text-center">
             <h2>Форма регистрации</h2>
-            <p class="lead">Введите свои параметры и мы рассчитаем Ваш точный размер одежды</p>
+            <p class="lead">Введите свои параметры, и мы рассчитаем Ваш размер одежды</p>
         </div>
         <div class="row g-5">
             <div class="col-md-7 col-lg-8">
@@ -38,45 +38,39 @@
                         </div>
 
                         <div class="col-12">
-                            <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-                            <div class="invalid-feedback">
-                                Please enter your shipping address.
-                            </div>
+                            <label for="height" class="form-label">Ваш рост</label>
+                            <input type="text" name="height" class="form-control" id="height" placeholder="" required="">
                         </div>
 
                         <div class="col-12">
-                            <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
-                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                            <label for="breast" class="form-label">Обхват груди</label>
+                            <input type="text" name="breast" class="form-control" id="breast" placeholder="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="waist" class="form-label">Обхват талии</label>
+                            <input type="text" name="waist" class="form-control" id="waist" placeholder="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="hips" class="form-label">Обхват бёдер</label>
+                            <input type="text" name="hips" class="form-control" id="hips" placeholder="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="foot" class="form-label">Длина стопы</label>
+                            <input type="text" name="foot" class="form-control" id="foot" placeholder="">
                         </div>
 
                         <div class="col-md-5">
-                            <label for="country" class="form-label">Country</label>
-                            <select class="form-select" id="country" required="">
-                                <option value="">Choose...</option>
-                                <option>United States</option>
+                            <label for="gender" class="form-label">Ваш пол</label>
+                            <select name="gender" class="form-select" id="gender" required="">
+                                <option value="">Выберите...</option>
+                                <option value="WOMAN">женский</option>
+                                <option value="MAN">мужской</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please select a valid country.
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="state" class="form-label">State</label>
-                            <select class="form-select" id="state" required="">
-                                <option value="">Choose...</option>
-                                <option>California</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please provide a valid state.
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <label for="zip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="zip" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Zip code required.
                             </div>
                         </div>
                     </div>

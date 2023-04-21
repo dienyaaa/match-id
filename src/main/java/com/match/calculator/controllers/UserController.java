@@ -1,5 +1,6 @@
 package com.match.calculator.controllers;
 
+import com.match.calculator.models.Gender;
 import com.match.calculator.models.User;
 import com.match.calculator.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class UserController {
 
     @GetMapping()
     public String userMain(Model model) {
-        return "register-user";
+        return "redirect:/user/1402"; //TODO: исправить ссылку
     }
 
     @GetMapping(path="/register")
@@ -26,14 +27,53 @@ public class UserController {
         return "register-user";
     }
 
-    @PostMapping(path="/register") // Map ONLY POST Requests
-    public String addNewUser (@RequestParam String username, @RequestParam String email) {
-        // @ResponseBody means the returned String is the response, not a view name
-        // @RequestParam means it is a parameter from the GET or POST request
-
+    @PostMapping(path="/register")
+    public String addNewUser (@RequestParam String username, @RequestParam String email,
+                              @RequestParam double height, @RequestParam double breast,
+                              @RequestParam double waist, @RequestParam double hips,
+                              @RequestParam double foot, @RequestParam String gender) {
         User n = new User();
         n.setUsername(username);
         n.setEmail(email);
+        n.setHeight(height);
+        n.setBreast(breast);
+        n.setWaist(waist);
+        n.setHips(hips);
+        n.setFoot(foot);
+        n.setGender(Gender.valueOf(gender));
+        n.getShoeSize();
+        userRepository.save(n);
+        return "redirect:/user/" + n.getId();
+    }
+
+    @GetMapping(path="/{id}/edit")
+    public String editUser(@PathVariable(value = "id") Long id, Model model) {
+        if (!userRepository.existsById(id)) {
+            return "redirect:/register";
+        }
+        Optional<User> user = userRepository.findById(id);
+        ArrayList<User> res = new ArrayList<>();
+        user.ifPresent(res::add);
+        model.addAttribute("user", res);
+        return "edit-user";
+    }
+
+    @PostMapping(path="/{id}/edit")
+    public String editUser (@PathVariable(value = "id") Long id,
+                            @RequestParam String username, @RequestParam String email,
+                            @RequestParam double height, @RequestParam double breast,
+                            @RequestParam double waist, @RequestParam double hips,
+                            @RequestParam double foot, @RequestParam String gender) {
+        User n = userRepository.findById(id).orElseThrow();
+        n.setUsername(username);
+        n.setEmail(email);
+        n.setHeight(height);
+        n.setBreast(breast);
+        n.setWaist(waist);
+        n.setHips(hips);
+        n.setFoot(foot);
+        n.setGender(Gender.valueOf(gender));
+        n.getShoeSize();
         userRepository.save(n);
         return "redirect:/user/" + n.getId();
     }
@@ -47,7 +87,13 @@ public class UserController {
         ArrayList<User> res = new ArrayList<>();
         user.ifPresent(res::add);
         model.addAttribute("user", res);
-        return "user-info";
+        return "info-user";
+    }
+
+    @PostMapping(path="/{id}/delete")
+    public String deleteUser(@PathVariable(value = "id") Long id, Model model) {
+        userRepository.deleteById(id);
+        return "redirect:/";
     }
 
     @GetMapping(path="/all")
