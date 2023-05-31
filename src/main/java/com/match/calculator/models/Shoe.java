@@ -9,11 +9,11 @@ import java.sql.*;
 @Table(name = "shoe_sizes")
 public class Shoe {
     @Id
+    private Long shoeId;
     @Column(name = "gender")
-    private Gender gender;
-    @Id
+    private final Gender gender;
     @Column(name = "foot_length")
-    private double footLength;
+    private final double footLength;
     @Embedded
     private Size shoeSize;
 
@@ -45,25 +45,5 @@ public class Shoe {
         rs.close();
         pstmt.close();
         conn.close();
-
-//        double key = footLength;
-//        TreeMap<Double, Double> map = new TreeMap<Double, Double>();
-//        if (gender == Gender.MAN)
-//        {
-//            map = sizesMan;
-//        }
-//        else if (gender == Gender.WOMAN) {
-//            map = sizesWoman;
-//        }
-//        Map.Entry<Double, Double> low = map.floorEntry(key);
-//        Map.Entry<Double, Double> high = map.ceilingEntry(key);
-//        Double res = 40.0;
-//        if (low != null && high != null) {
-//            res = Math.abs(key-low.getKey()) < Math.abs(key-high.getKey())
-//                    ?   low.getValue()
-//                    :   high.getValue();
-//        } else if (low != null || high != null) {
-//            res = low != null ? low.getValue() : high.getValue();
-//        }
     }
 }

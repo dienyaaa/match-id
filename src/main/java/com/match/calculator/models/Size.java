@@ -1,11 +1,15 @@
 package com.match.calculator.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class Size {
+    @Column(name = "ru_size")
     private double sizeRU;
+    @Column(name = "eu_size")
     private double sizeEU;
+    @Column(name = "us_size")
     private double sizeUS;
 
     public Size(double sizeRU, double sizeEU, double sizeUS) {
