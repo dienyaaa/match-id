@@ -8,8 +8,10 @@ import java.sql.*;
 @Entity
 @Table(name = "shoe_sizes")
 public class Shoes {
+    @Id
     @Column(name = "gender")
     private final Gender gender;
+    @Id
     @Column(name = "foot_length")
     private final double footLength;
     @Embedded
