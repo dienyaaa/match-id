@@ -1,9 +1,6 @@
 package com.match.calculator.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class User {
@@ -11,9 +8,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String username, email;
-
     private Gender gender;
     private double height, breast, waist, hips, footLength;
+    @ManyToOne
     private Shoe shoeSize;
 
     public String getGender() {

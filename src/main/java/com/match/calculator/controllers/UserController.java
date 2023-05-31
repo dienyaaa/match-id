@@ -31,7 +31,7 @@ public class UserController {
     public String addNewUser (@RequestParam String username, @RequestParam String email,
                               @RequestParam double height, @RequestParam double breast,
                               @RequestParam double waist, @RequestParam double hips,
-                              @RequestParam double foot, @RequestParam String gender) {
+                              @RequestParam double footLength, @RequestParam String gender) {
         User n = new User();
         n.setUsername(username);
         n.setEmail(email);
@@ -39,7 +39,7 @@ public class UserController {
         n.setBreast(breast);
         n.setWaist(waist);
         n.setHips(hips);
-        n.setFootLength(foot);
+        n.setFootLength(footLength);
         n.setGender(Gender.valueOf(gender));
         n.setShoeSize();
         userRepository.save(n);
@@ -63,7 +63,7 @@ public class UserController {
                             @RequestParam String username, @RequestParam String email,
                             @RequestParam double height, @RequestParam double breast,
                             @RequestParam double waist, @RequestParam double hips,
-                            @RequestParam double foot, @RequestParam String gender) {
+                            @RequestParam double footLength, @RequestParam String gender) {
         User n = userRepository.findById(id).orElseThrow();
         n.setUsername(username);
         n.setEmail(email);
@@ -71,7 +71,7 @@ public class UserController {
         n.setBreast(breast);
         n.setWaist(waist);
         n.setHips(hips);
-        n.setFootLength(foot);
+        n.setFootLength(footLength);
         n.setGender(Gender.valueOf(gender));
         n.setShoeSize();
         userRepository.save(n);
