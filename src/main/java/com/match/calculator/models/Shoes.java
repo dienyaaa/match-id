@@ -1,12 +1,18 @@
 package com.match.calculator.models;
 
 import com.match.calculator.DatabaseConfig;
+import jakarta.persistence.*;
 
 import java.sql.*;
 
+@Entity
+@Table(name = "shoe_sizes")
 public class Shoes {
+    @Column(name = "gender")
     private final Gender gender;
+    @Column(name = "foot_length")
     private final double footLength;
+    @Embedded
     private Size shoeSize;
 
     public Shoes(Gender gender, double footLength) {

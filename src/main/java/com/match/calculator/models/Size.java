@@ -1,5 +1,8 @@
 package com.match.calculator.models;
 
+import jakarta.persistence.Embeddable;
+
+@Embeddable
 public class Size {
     private double sizeRU;
     private double sizeEU;
