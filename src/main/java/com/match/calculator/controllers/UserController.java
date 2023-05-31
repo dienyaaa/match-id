@@ -39,7 +39,7 @@ public class UserController {
         n.setBreast(breast);
         n.setWaist(waist);
         n.setHips(hips);
-        n.setFoot(foot);
+        n.setFootLength(foot);
         n.setGender(Gender.valueOf(gender));
         n.setShoeSize();
         userRepository.save(n);
@@ -71,7 +71,7 @@ public class UserController {
         n.setBreast(breast);
         n.setWaist(waist);
         n.setHips(hips);
-        n.setFoot(foot);
+        n.setFootLength(foot);
         n.setGender(Gender.valueOf(gender));
         n.setShoeSize();
         userRepository.save(n);

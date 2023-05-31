@@ -16,7 +16,9 @@
         <p>Ваш никнейм: <label th:text="${el.username}"></label></p>
         <p>Ваша электронная почта: <label th:text="${el.email}"></label></p>
         <p>Ваш пол: <label th:text="${el.gender}"></label></p>
-        <p>Ваш размер обуви: <h4 th:text="${el.shoeSize}"></h4></p>
+        <p>Ваш российский размер обуви (RU): <h4 th:text="${el.shoeSize.sizeRU}"></h4></p>
+        <p>Ваш европейский размер обуви (EU): <h4 th:text="${el.shoeSize.sizeEU}"></h4></p>
+        <p>Ваш американский размер обуви (US): <h4 th:text="${el.shoeSize.sizeUS}"></h4></p>
         <a th:href="'/user/' + ${el.id} + '/edit'" class="btn btn-warning">Редактировать</a> <br><br>
         <form th:action="'/user/' + ${el.id} + '/delete'" method="post">
             <button class="btn btn-warning" type="submit">Удалить</button>
