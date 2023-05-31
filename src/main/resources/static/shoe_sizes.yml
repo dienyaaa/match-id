@@ -1,0 +1,172 @@
+%YAML 1.1
+---
+spring_web_calculator.shoe_sizes:
+-
+  gender: "WOMAN"
+  foot_length: 215.0
+  ru_size: 34
+  eu_size: 35
+  us_size: 5
+-
+  gender: "WOMAN"
+  foot_length: 220.0
+  ru_size: 34.5
+  eu_size: 35.5
+  us_size: 5.5
+-
+  gender: "WOMAN"
+  foot_length: 225.0
+  ru_size: 35
+  eu_size: 36
+  us_size: 6
+-
+  gender: "WOMAN"
+  foot_length: 230.0
+  ru_size: 36
+  eu_size: 36.5
+  us_size: 6.5
+-
+  gender: "WOMAN"
+  foot_length: 235.0
+  ru_size: 36.5
+  eu_size: 37
+  us_size: 7
+-
+  gender: "WOMAN"
+  foot_length: 240.0
+  ru_size: 37
+  eu_size: 37.5
+  us_size: 7.5
+-
+  gender: "WOMAN"
+  foot_length: 245.0
+  ru_size: 37.5
+  eu_size: 38
+  us_size: 8
+-
+  gender: "WOMAN"
+  foot_length: 250.0
+  ru_size: 38
+  eu_size: 38.5
+  us_size: 8.5
+-
+  gender: "WOMAN"
+  foot_length: 255.0
+  ru_size: 39
+  eu_size: 39
+  us_size: 9
+-
+  gender: "WOMAN"
+  foot_length: 260.0
+  ru_size: 39.5
+  eu_size: 39.5
+  us_size: 9.5
+-
+  gender: "WOMAN"
+  foot_length: 265.0
+  ru_size: 40
+  eu_size: 40.5
+  us_size: 10
+-
+  gender: "WOMAN"
+  foot_length: 270.0
+  ru_size: 41
+  eu_size: 41
+  us_size: 10.5
+-
+  gender: "WOMAN"
+  foot_length: 275.0
+  ru_size: 41.5
+  eu_size: 41.5
+  us_size: 11
+-
+  gender: "WOMAN"
+  foot_length: 280.0
+  ru_size: 42
+  eu_size: 42
+  us_size: 11.5
+-
+  gender: "WOMAN"
+  foot_length: 285.0
+  ru_size: 42.5
+  eu_size: 42.5
+  us_size: 12
+-
+  gender: "MAN"
+  foot_length: 250.0
+  ru_size: 39
+  eu_size: 40
+  us_size: 7
+-
+  gender: "MAN"
+  foot_length: 255.0
+  ru_size: 39.5
+  eu_size: 40.5
+  us_size: 7.5
+-
+  gender: "MAN"
+  foot_length: 260.0
+  ru_size: 40
+  eu_size: 41
+  us_size: 8
+-
+  gender: "MAN"
+  foot_length: 265.0
+  ru_size: 40.5
+  eu_size: 41.5
+  us_size: 8.5
+-
+  gender: "MAN"
+  foot_length: 270.0
+  ru_size: 41
+  eu_size: 42
+  us_size: 9
+-
+  gender: "MAN"
+  foot_length: 275.0
+  ru_size: 41.5
+  eu_size: 42.5
+  us_size: 9.5
+-
+  gender: "MAN"
+  foot_length: 280.0
+  ru_size: 42
+  eu_size: 43
+  us_size: 10
+-
+  gender: "MAN"
+  foot_length: 285.0
+  ru_size: 42.5
+  eu_size: 43.5
+  us_size: 10.5
+-
+  gender: "MAN"
+  foot_length: 290.0
+  ru_size: 43
+  eu_size: 44
+  us_size: 11
+-
+  gender: "MAN"
+  foot_length: 295.0
+  ru_size: 43.5
+  eu_size: 44.5
+  us_size: 11.5
+-
+  gender: "MAN"
+  foot_length: 300.0
+  ru_size: 44
+  eu_size: 45
+  us_size: 12
+-
+  gender: "MAN"
+  foot_length: 310.0
+  ru_size: 45
+  eu_size: 46
+  us_size: 13
+-
+  gender: "MAN"
+  foot_length: 320.0
+  ru_size: 46
+  eu_size: 47
+  us_size: 14
+...

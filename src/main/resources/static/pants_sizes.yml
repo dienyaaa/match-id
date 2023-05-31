@@ -1,0 +1,156 @@
+spring_web_calculator.pants_sizes:
+  - gender: "WOMAN"
+    waist: 58.0
+    hips: 82.0
+    ru_size: 38.0
+    eu_size: "XXS"
+  - gender: "WOMAN"
+    waist: 62.0
+    hips: 86.0
+    ru_size: 40.0
+    eu_size: "XS"
+  - gender: "WOMAN"
+    waist: 66.0
+    hips: 92.0
+    ru_size: 42.0
+    eu_size: "S"
+  - gender: "WOMAN"
+    waist: 70.0
+    hips: 96.0
+    ru_size: 44.0
+    eu_size: "M"
+  - gender: "WOMAN"
+    waist: 74.0
+    hips: 100.0
+    ru_size: 46.0
+    eu_size: "M"
+  - gender: "WOMAN"
+    waist: 78.0
+    hips: 104.0
+    ru_size: 48.0
+    eu_size: "L"
+  - gender: "WOMAN"
+    waist: 82.0
+    hips: 108.0
+    ru_size: 50.0
+    eu_size: "L"
+  - gender: "WOMAN"
+    waist: 86.0
+    hips: 112.0
+    ru_size: 52.0
+    eu_size: "XL"
+  - gender: "WOMAN"
+    waist: 90.0
+    hips: 116.0
+    ru_size: 54.0
+    eu_size: "XXL"
+  - gender: "WOMAN"
+    waist: 94.0
+    hips: 120.0
+    ru_size: 56.0
+    eu_size: "XXL"
+  - gender: "WOMAN"
+    waist: 98.0
+    hips: 124.0
+    ru_size: 58.0
+    eu_size: "XXXL"
+  - gender: "WOMAN"
+    waist: 100.0
+    hips: 128.0
+    ru_size: 60.0
+    eu_size: "4XL"
+  - gender: "WOMAN"
+    waist: 104.0
+    hips: 132.0
+    ru_size: 62.0
+    eu_size: "4XL"
+  - gender: "WOMAN"
+    waist: 108.0
+    hips: 136.0
+    ru_size: 64.0
+    eu_size: "4XL"
+  - gender: "WOMAN"
+    waist: 112.0
+    hips: 140.0
+    ru_size: 66.0
+    eu_size: "5XL"
+  - gender: "WOMAN"
+    waist: 116.0
+    hips: 144.0
+    ru_size: 68.0
+    eu_size: "5XL"
+  - gender: "WOMAN"
+    waist: 120.0
+    hips: 148.0
+    ru_size: 70.0
+    eu_size: "5XL"
+  - gender: "MAN"
+    waist: 70.0
+    hips: 92.0
+    ru_size: 44.0
+    eu_size: "XXS"
+  - gender: "MAN"
+    waist: 76.0
+    hips: 96.0
+    ru_size: 46.0
+    eu_size: "XS"
+  - gender: "MAN"
+    waist: 82.0
+    hips: 100.0
+    ru_size: 48.0
+    eu_size: "S"
+  - gender: "MAN"
+    waist: 88.0
+    hips: 104.0
+    ru_size: 50.0
+    eu_size: "M"
+  - gender: "MAN"
+    waist: 94.0
+    hips: 108.0
+    ru_size: 52.0
+    eu_size: "L"
+  - gender: "MAN"
+    waist: 100.0
+    hips: 112.0
+    ru_size: 54.0
+    eu_size: "XL"
+  - gender: "MAN"
+    waist: 106.0
+    hips: 116.0
+    ru_size: 56.0
+    eu_size: "2XL"
+  - gender: "MAN"
+    waist: 112.0
+    hips: 120.0
+    ru_size: 58.0
+    eu_size: "3XL"
+  - gender: "MAN"
+    waist: 118.0
+    hips: 124.0
+    ru_size: 60.0
+    eu_size: "3XL"
+  - gender: "MAN"
+    waist: 120.0
+    hips: 128.0
+    ru_size: 62.0
+    eu_size: "3XL"
+  - gender: "MAN"
+    waist: 124.0
+    hips: 132.0
+    ru_size: 64.0
+    eu_size: "4XL"
+  - gender: "MAN"
+    waist: 128.0
+    hips: 134.0
+    ru_size: 66.0
+    eu_size: "4XL"
+  - gender: "MAN"
+    waist: 132.0
+    hips: 136.0
+    ru_size: 68.0
+    eu_size: "5XL"
+  - gender: "MAN"
+    waist: 136.0
+    hips: 138.0
+    ru_size: 70.0
+    eu_size: "5XL"

@@ -1,0 +1,99 @@
+spring_web_calculator.shirt_sizes:
+  - gender: "WOMAN"
+    chest: 80.0
+    waist: 65.0
+    hips: 90.0
+    ru_size: 44.0
+    eu_size: XS
+    us_size: 8.0
+  - gender: "WOMAN"
+    chest: 85.0
+    waist: 69.0
+    hips: 95.0
+    ru_size: 46.0
+    eu_size: S
+    us_size: 10.0
+  - gender: "WOMAN"
+    chest: 89.0
+    waist: 73.0
+    hips: 98.0
+    ru_size: 48.0
+    eu_size: M
+    us_size: 11.0
+  - gender: "WOMAN"
+    chest: 93.0
+    waist: 77.0
+    hips: 101.0
+    ru_size: 49.0
+    eu_size: M
+    us_size: 12.0
+  - gender: "WOMAN"
+    chest: 97.0
+    waist: 81.0
+    hips: 104.0
+    ru_size: 50.0
+    eu_size: L
+    us_size: 14.0
+  - gender: "WOMAN"
+    chest: 102.0
+    waist: 85.0
+    hips: 108.0
+    ru_size: 52.0
+    eu_size: XL
+    us_size: 16.0
+  - gender: "WOMAN"
+    chest: 107.0
+    waist: 90.0
+    hips: 112.0
+    ru_size: 54.0
+    eu_size: XXL
+    us_size: 18.0
+  - gender: "WOMAN"
+    chest: 113.0
+    waist: 95.0
+    hips: 116.0
+    ru_size: 54.0
+    eu_size: XXL
+    us_size: 16.0
+  - gender: "MAN"
+    chest: 88.0
+    waist: 80.0
+    hips: 88.0
+    ru_size: 46.0
+    eu_size: XS
+    us_size: 10.0
+  - gender: "MAN"
+    chest: 92.0
+    waist: 80.0
+    hips: 92.0
+    ru_size: 48.0
+    eu_size: S
+    us_size: 12.0
+  - gender: "MAN"
+    chest: 100.0
+    waist: 88.0
+    hips: 100.0
+    ru_size: 50.0
+    eu_size: M
+    us_size: 14.0
+  - gender: "MAN"
+    chest: 108.0
+    waist: 96.0
+    hips: 108.0
+    ru_size: 54.0
+    eu_size: L
+    us_size: 16.0
+  - gender: "MAN"
+    chest: 116.0
+    waist: 104.0
+    hips: 116.0
+    ru_size: 56.0
+    eu_size: XL
+    us_size: 18.0
+  - gender: "MAN"
+    chest: 124.0
+    waist: 112.0
+    hips: 124.0
+    ru_size: 60.0
+    eu_size: XXL
+    us_size: 20.0

@@ -16,9 +16,20 @@
         <p>Ваш никнейм: <label th:text="${el.username}"></label></p>
         <p>Ваша электронная почта: <label th:text="${el.email}"></label></p>
         <p>Ваш пол: <label th:text="${el.gender}"></label></p>
-        <p>Ваш российский размер обуви (RU): <h4 th:text="${el.shoeSize.sizeRU}"></h4></p>
-        <p>Ваш европейский размер обуви (EU): <h4 th:text="${el.shoeSize.sizeEU}"></h4></p>
-        <p>Ваш американский размер обуви (US): <h4 th:text="${el.shoeSize.sizeUS}"></h4></p>
+        <p>Ваш рост: <h4 th:text="${el.height}"></h4></p>
+        <p>Ваша длина стопы: <h4 th:text="${el.footLength}"></h4></p>
+        <p>Ваш обхват груди: <h4 th:text="${el.chest}"></h4></p>
+        <p>Ваш обхват талии: <h4 th:text="${el.waist}"></h4></p>
+        <p>Ваш обхват бёдер: <h4 th:text="${el.hips}"></h4></p>
+        <h2>Рассчитанные значения:</h2>
+        <p>Ваш российский размер обуви (RU): <h4 th:text="${el.shoeSizeRU}"></h4></p>
+        <p>Ваш европейский размер обуви (EU): <h4 th:text="${el.shoeSizeEU}"></h4></p>
+        <p>Ваш американский размер обуви (US): <h4 th:text="${el.shoeSizeUS}"></h4></p>
+        <p>Ваш российский размер брюк (RU): <h4 th:text="${el.pantsSizeRU}"></h4></p>
+        <p>Ваш европейский размер брюк (EU): <h4 th:text="${el.pantsSizeEU}"></h4></p>
+        <p>Ваш российский размер футболки (RU): <h4 th:text="${el.shirtSizeRU}"></h4></p>
+        <p>Ваш европейский размер футболки (EU): <h4 th:text="${el.shirtSizeEU}"></h4></p>
+        <p>Ваш американский размер футболки (US): <h4 th:text="${el.shirtSizeUS}"></h4></p>
         <a th:href="'/user/' + ${el.id} + '/edit'" class="btn btn-warning">Редактировать</a> <br><br>
         <form th:action="'/user/' + ${el.id} + '/delete'" method="post">
             <button class="btn btn-warning" type="submit">Удалить</button>
