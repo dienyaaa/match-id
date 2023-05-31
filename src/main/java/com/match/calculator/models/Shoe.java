@@ -7,17 +7,17 @@ import java.sql.*;
 
 @Entity
 @Table(name = "shoe_sizes")
-public class Shoes {
+public class Shoe {
     @Id
     @Column(name = "gender")
-    private final Gender gender;
+    private Gender gender;
     @Id
     @Column(name = "foot_length")
-    private final double footLength;
+    private double footLength;
     @Embedded
     private Size shoeSize;
 
-    public Shoes(Gender gender, double footLength) {
+    public Shoe(Gender gender, double footLength) {
         this.gender = gender;
         this.footLength = footLength;
     }

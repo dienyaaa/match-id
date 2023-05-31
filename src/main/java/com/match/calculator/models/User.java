@@ -14,7 +14,7 @@ public class User {
 
     private Gender gender;
     private double height, breast, waist, hips, footLength;
-    private Shoes shoeSize;
+    private Shoe shoeSize;
 
     public String getGender() {
         if (gender == Gender.MAN) {
@@ -94,12 +94,12 @@ public class User {
         this.email = email;
     }
 
-    public Shoes getShoeSize() {
+    public Shoe getShoeSize() {
         return shoeSize;
     }
 
     public void setShoeSize() {
-        this.shoeSize = new Shoes(gender, footLength);
+        this.shoeSize = new Shoe(gender, footLength);
     }
 
     public User() {
