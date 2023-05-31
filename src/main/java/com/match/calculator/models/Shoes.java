@@ -31,7 +31,7 @@ public class Shoes {
     public void setShoeSize() throws SQLException, ClassNotFoundException {
         DatabaseConfig config = new DatabaseConfig();
         Connection conn = config.getConnection();
-        String query = "SELECT * FROM shoe_sizes WHERE gender=? AND foot_length=?";
+        String query = "SELECT * FROM shoe_sizes WHERE gender=? AND foot_length<? ORDER BY foot_length DESC LIMIT 1";
         PreparedStatement pstmt = conn.prepareStatement(query);
         pstmt.setString(1, String.valueOf(gender));
         pstmt.setDouble(2, footLength);
