@@ -157,9 +157,6 @@ public class User {
                 }
             }
         }
-        if (closestWaist == Double.MAX_VALUE || closestHips == Double.MAX_VALUE) {
-            return;
-        }
         double size = Math.max(closestSizeWaist, closestSizeHips);
         pantsSizeRU = String.valueOf(size);
         for (Map<String, Object> item : data.get("spring_web_calculator.pants_sizes")) {
@@ -167,6 +164,15 @@ public class User {
             double itemSize = (double) item.get("ru_size");
             if (String.valueOf(gender).equals(itemGender) && itemSize == size) {
                 pantsSizeEU = (String) item.get("eu_size");
+            }
+        }
+        if (closestWaist == Double.MAX_VALUE || closestHips == Double.MAX_VALUE) {
+            if (String.valueOf(gender).equals("WOMAN")) {
+                pantsSizeRU = String.valueOf(70.0);
+                pantsSizeEU = "5XL";
+            } else if (String.valueOf(gender).equals("MAN")) {
+                pantsSizeRU = String.valueOf(70.0);
+                pantsSizeEU = "5XL";
             }
         }
     }
@@ -214,9 +220,6 @@ public class User {
                 }
             }
         }
-        if (closestChest == Double.MAX_VALUE || closestWaist == Double.MAX_VALUE || closestHips == Double.MAX_VALUE) {
-            return;
-        }
         double size = Math.max(closestSizeChest, Math.max(closestSizeWaist, closestSizeHips));
         shirtSizeRU = String.valueOf(size);
         for (Map<String, Object> item : data.get("spring_web_calculator.shirt_sizes")) {
@@ -225,6 +228,17 @@ public class User {
             if (String.valueOf(gender).equals(itemGender) && itemSize == size) {
                 shirtSizeEU = item.get("eu_size").toString();
                 shirtSizeUS = item.get("us_size").toString();
+            }
+        }
+        if (closestChest == Double.MAX_VALUE || closestWaist == Double.MAX_VALUE || closestHips == Double.MAX_VALUE) {
+            if (String.valueOf(gender).equals("WOMAN")) {
+                shirtSizeRU = String.valueOf(54.0);
+                shirtSizeEU = "XXL";
+                shirtSizeUS = String.valueOf(16.0);
+            } else if (String.valueOf(gender).equals("MAN")) {
+                shirtSizeRU = String.valueOf(60.0);
+                shirtSizeEU = "XXL";
+                shirtSizeUS = String.valueOf(20.0);
             }
         }
     }

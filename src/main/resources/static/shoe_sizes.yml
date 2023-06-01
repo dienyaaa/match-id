@@ -4,9 +4,9 @@ spring_web_calculator.shoe_sizes:
 -
   gender: "WOMAN"
   foot_length: 215.0
-  ru_size: 34
-  eu_size: 35
-  us_size: 5
+  ru_size: 34.0
+  eu_size: 35.0
+  us_size: 5.0
 -
   gender: "WOMAN"
   foot_length: 220.0
@@ -16,45 +16,45 @@ spring_web_calculator.shoe_sizes:
 -
   gender: "WOMAN"
   foot_length: 225.0
-  ru_size: 35
-  eu_size: 36
-  us_size: 6
+  ru_size: 35.0
+  eu_size: 36.0
+  us_size: 6.0
 -
   gender: "WOMAN"
   foot_length: 230.0
-  ru_size: 36
+  ru_size: 36.0
   eu_size: 36.5
   us_size: 6.5
 -
   gender: "WOMAN"
   foot_length: 235.0
   ru_size: 36.5
-  eu_size: 37
-  us_size: 7
+  eu_size: 37.0
+  us_size: 7.0
 -
   gender: "WOMAN"
   foot_length: 240.0
-  ru_size: 37
+  ru_size: 37.0
   eu_size: 37.5
   us_size: 7.5
 -
   gender: "WOMAN"
   foot_length: 245.0
   ru_size: 37.5
-  eu_size: 38
-  us_size: 8
+  eu_size: 38.0
+  us_size: 8.0
 -
   gender: "WOMAN"
   foot_length: 250.0
-  ru_size: 38
+  ru_size: 38.0
   eu_size: 38.5
   us_size: 8.5
 -
   gender: "WOMAN"
   foot_length: 255.0
-  ru_size: 39
-  eu_size: 39
-  us_size: 9
+  ru_size: 39.0
+  eu_size: 39.0
+  us_size: 9.0
 -
   gender: "WOMAN"
   foot_length: 260.0
@@ -64,39 +64,39 @@ spring_web_calculator.shoe_sizes:
 -
   gender: "WOMAN"
   foot_length: 265.0
-  ru_size: 40
+  ru_size: 40.0
   eu_size: 40.5
-  us_size: 10
+  us_size: 10.0
 -
   gender: "WOMAN"
   foot_length: 270.0
-  ru_size: 41
-  eu_size: 41
+  ru_size: 41.0
+  eu_size: 41.0
   us_size: 10.5
 -
   gender: "WOMAN"
   foot_length: 275.0
   ru_size: 41.5
   eu_size: 41.5
-  us_size: 11
+  us_size: 11.0
 -
   gender: "WOMAN"
   foot_length: 280.0
-  ru_size: 42
-  eu_size: 42
+  ru_size: 42.0
+  eu_size: 42.0
   us_size: 11.5
 -
   gender: "WOMAN"
   foot_length: 285.0
   ru_size: 42.5
   eu_size: 42.5
-  us_size: 12
+  us_size: 12.0
 -
   gender: "MAN"
   foot_length: 250.0
-  ru_size: 39
-  eu_size: 40
-  us_size: 7
+  ru_size: 39.0
+  eu_size: 40.0
+  us_size: 7.0
 -
   gender: "MAN"
   foot_length: 255.0
@@ -106,9 +106,9 @@ spring_web_calculator.shoe_sizes:
 -
   gender: "MAN"
   foot_length: 260.0
-  ru_size: 40
-  eu_size: 41
-  us_size: 8
+  ru_size: 40.0
+  eu_size: 41.0
+  us_size: 8.0
 -
   gender: "MAN"
   foot_length: 265.0
@@ -118,9 +118,9 @@ spring_web_calculator.shoe_sizes:
 -
   gender: "MAN"
   foot_length: 270.0
-  ru_size: 41
-  eu_size: 42
-  us_size: 9
+  ru_size: 41.0
+  eu_size: 42.0
+  us_size: 9.0
 -
   gender: "MAN"
   foot_length: 275.0
@@ -130,9 +130,9 @@ spring_web_calculator.shoe_sizes:
 -
   gender: "MAN"
   foot_length: 280.0
-  ru_size: 42
-  eu_size: 43
-  us_size: 10
+  ru_size: 42.0
+  eu_size: 43.0
+  us_size: 10.0
 -
   gender: "MAN"
   foot_length: 285.0
@@ -142,9 +142,9 @@ spring_web_calculator.shoe_sizes:
 -
   gender: "MAN"
   foot_length: 290.0
-  ru_size: 43
-  eu_size: 44
-  us_size: 11
+  ru_size: 43.0
+  eu_size: 44.0
+  us_size: 11.0
 -
   gender: "MAN"
   foot_length: 295.0
@@ -154,19 +154,18 @@ spring_web_calculator.shoe_sizes:
 -
   gender: "MAN"
   foot_length: 300.0
-  ru_size: 44
-  eu_size: 45
-  us_size: 12
+  ru_size: 44.0
+  eu_size: 45.0
+  us_size: 12.0
 -
   gender: "MAN"
   foot_length: 310.0
-  ru_size: 45
-  eu_size: 46
-  us_size: 13
+  ru_size: 45.0
+  eu_size: 46.0
+  us_size: 13.0
 -
   gender: "MAN"
   foot_length: 320.0
-  ru_size: 46
-  eu_size: 47
-  us_size: 14
-...
+  ru_size: 46.0
+  eu_size: 47.0
+  us_size: 14.0

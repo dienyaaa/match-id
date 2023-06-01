@@ -25,6 +25,10 @@ public class UserController {
 
     @PostMapping(path="/login")
     public String userLogin(@RequestParam String id) {
+        if (id.equals("")) {
+            Long firstId = userRepository.findAll().iterator().next().getId();
+            return "redirect:/user/" + firstId;
+        }
         long matchId = Long.parseLong(id);
         if (!userRepository.existsById(matchId)) {
             return "redirect:/user/register";
