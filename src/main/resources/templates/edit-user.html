@@ -1,88 +1,106 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>Обновить профиль</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Обновить профиль</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+    .required:after {
+    content:" *";
+    color:red;
+}
+    </style>
 </head>
 <body>
 <header th:insert="~{blocks/header :: header}"></header>
 <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Редактировать профиль</h1>
-  <p class="lead">Введите свои параметры, и мы рассчитаем Ваш размер одежды</p>
+    <h1 class="display-4">Редактировать профиль</h1>
+    <p class="lead">Введите свои параметры, и мы рассчитаем Ваш размер одежды</p>
 </div>
 <div class="container">
-  <main>
-    <div class="row g-5">
-      <div class="col-md-4 order-md-2 mb-4 d-flex align-items-center justify-content-center">
-        <img src="../../measurements.png" class="align-items-center">
-      </div>
-      <div th:each="el : ${user}" class="col-md-7 col-lg-8">
-        <h4 class="mb-3">Ваши данные</h4>
-        <form method="post" class="needs-validation" novalidate="">
-          <div class="row g-3">
-            <div class="col-12">
-              <label for="username" class="form-label">Username</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text">@</span>
-                <input type="text" th:value="${el.username}" name="username" class="form-control" id="username" placeholder="Username" required="">
-                <div class="invalid-feedback">
-                  Your username is required.
-                </div>
-              </div>
+    <main>
+        <div class="row g-5">
+            <div class="col-md-4 order-md-2 mb-4 d-flex align-items-center justify-content-center">
+                <img src="../../measurements.png" class="align-items-center">
             </div>
+            <div th:each="el : ${user}" class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Ваши данные</h4>
+                <form method="post" class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" th:value="${el.username}" name="username" class="form-control"
+                                       id="username" placeholder="Username" required="">
+                            </div>
+                        </div>
 
-            <div class="col-12">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" th:value="${el.email}" name="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" th:value="${el.email}" name="email" class="form-control" id="email"
+                                   placeholder="you@example.com">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="height" class="form-label required">Ваш рост</label>
+                            <input type="text" th:value="${el.height}" name="height" class="form-control" id="height"
+                                   placeholder="" required="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="chest" class="form-label required">Обхват груди</label>
+                            <input type="text" th:value="${el.chest}" name="chest" class="form-control" id="chest"
+                                   placeholder="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="waist" class="form-label required">Обхват талии</label>
+                            <input type="text" th:value="${el.waist}" name="waist" class="form-control" id="waist"
+                                   placeholder="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="hips" class="form-label required">Обхват бёдер</label>
+                            <input type="text" th:value="${el.hips}" name="hips" class="form-control" id="hips"
+                                   placeholder="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="footLength" class="form-label required">Длина стопы</label>
+                            <input type="text" th:value="${el.footLength}" name="footLength" class="form-control"
+                                   id="footLength" placeholder="">
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label>Пол <span style="color: red">*</span>
+                                    <div class="form-check form-check-inline" style="margin-left: 10px;">
+                                        <input class="form-check-input" type="radio" name="gender" id="woman"
+                                               value="WOMAN">
+                                        <label class="form-check-label" for="woman">Женский</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="man"
+                                               value="MAN" checked>
+                                        <label class="form-check-label" for="man">Мужской</label>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <span><em><span style="color: red">*</span> Звездочкой отмечены поля, обязательные для заполнения</em></span>
+                    </div>
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Обновить</button>
+                </form>
             </div>
-
-            <div class="col-12">
-              <label for="height" class="form-label">Ваш рост</label>
-              <input type="text" th:value="${el.height}" name="height" class="form-control" id="height" placeholder="" required="">
-            </div>
-
-            <div class="col-12">
-              <label for="chest" class="form-label">Обхват груди</label>
-              <input type="text" th:value="${el.chest}" name="chest" class="form-control" id="chest" placeholder="">
-            </div>
-
-            <div class="col-12">
-              <label for="waist" class="form-label">Обхват талии</label>
-              <input type="text" th:value="${el.waist}" name="waist" class="form-control" id="waist" placeholder="">
-            </div>
-
-            <div class="col-12">
-              <label for="hips" class="form-label">Обхват бёдер</label>
-              <input type="text" th:value="${el.hips}" name="hips" class="form-control" id="hips" placeholder="">
-            </div>
-
-            <div class="col-12">
-              <label for="footLength" class="form-label">Длина стопы</label>
-              <input type="text" th:value="${el.footLength}" name="footLength" class="form-control" id="footLength" placeholder="">
-            </div>
-
-            <div class="col-md-5">
-              <label for="gender" class="form-label">Ваш пол</label>
-              <select th:value="${el.gender}" name="gender" class="form-select" id="gender" required="">
-                <option value="">Выберите...</option>
-                <option value="WOMAN">женский</option>
-                <option value="MAN">мужской</option>
-              </select>
-            </div>
-          </div>
-
-          <hr class="my-4">
-
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Обновить</button>
-        </form>
-      </div>
-    </div>
-  </main>
+        </div>
+    </main>
 </div>
 <div th:insert="~{blocks/footer :: footer}"></div>
 </body>
